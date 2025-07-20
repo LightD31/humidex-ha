@@ -1,0 +1,66 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configuration du capteur Humidex",
+        "description": "Configurez votre capteur Humidex en sélectionnant les entités de température et d'humidité.",
+        "data": {
+          "name": "Nom",
+          "temperature_entity": "Entité température",
+          "humidity_entity": "Entité humidité",
+          "pressure_entity": "Entité pression (optionnel)"
+        },
+        "data_description": {
+          "name": "Nom personnalisé pour le capteur Humidex (optionnel)",
+          "temperature_entity": "Sélectionnez l'entité qui fournit la température en °C",
+          "humidity_entity": "Sélectionnez l'entité qui fournit l'humidité relative en %",
+          "pressure_entity": "Sélectionnez l'entité qui fournit la pression atmosphérique en hPa pour une précision améliorée (optionnel)"
+        }
+      }
+    },
+    "error": {
+      "invalid_entity": "Une ou plusieurs entités sélectionnées sont invalides ou indisponibles",
+      "unknown": "Erreur inattendue"
+    },
+    "abort": {
+      "already_configured": "Cette intégration est déjà configurée"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options du capteur Humidex",
+        "description": "Modifiez les entités utilisées pour le calcul de l'humidex.",
+        "data": {
+          "temperature_entity": "Entité température",
+          "humidity_entity": "Entité humidité",
+          "pressure_entity": "Entité pression (optionnel)"
+        },
+        "data_description": {
+          "temperature_entity": "Sélectionnez l'entité qui fournit la température en °C",
+          "humidity_entity": "Sélectionnez l'entité qui fournit l'humidité relative en %",
+          "pressure_entity": "Sélectionnez l'entité qui fournit la pression atmosphérique en hPa pour une précision améliorée (optionnel)"
+        }
+      }
+    },
+    "error": {
+      "invalid_entity": "Une ou plusieurs entités sélectionnées sont invalides ou indisponibles",
+      "unknown": "Erreur inattendue"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "humidex": {
+        "state_attributes": {
+          "comfort_description": {
+            "cold": "Froid",
+            "comfortable": "Confortable", 
+            "slightly_uncomfortable": "Légèrement inconfortable",
+            "very_uncomfortable": "Très inconfortable",
+            "dangerous": "Dangereux"
+          }
+        }
+      }
+    }
+  }
+}

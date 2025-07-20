@@ -1,0 +1,13 @@
+{
+  "domain": "humidex_sensor",
+  "name": "Humidex Sensor",
+  "version": "1.0.0",
+  "documentation": "https://github.com/LightD31/humidex-ha",
+  "requirements": [],
+  "codeowners": ["@LightD31"],
+  "iot_class": "calculated",
+  "config_flow": true,
+  "loggers": [
+    "custom_components.humidex_sensor"
+  ]
+}

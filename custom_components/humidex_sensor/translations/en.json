@@ -1,0 +1,66 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Humidex Sensor Setup",
+        "description": "Configure your Humidex sensor by selecting temperature and humidity entities.",
+        "data": {
+          "name": "Name",
+          "temperature_entity": "Temperature entity",
+          "humidity_entity": "Humidity entity",
+          "pressure_entity": "Pressure entity (optional)"
+        },
+        "data_description": {
+          "name": "Custom name for the Humidex sensor (optional)",
+          "temperature_entity": "Select the entity that provides temperature in °C",
+          "humidity_entity": "Select the entity that provides relative humidity in %",
+          "pressure_entity": "Select the entity that provides atmospheric pressure in hPa for enhanced precision (optional)"
+        }
+      }
+    },
+    "error": {
+      "invalid_entity": "One or more selected entities are invalid or unavailable",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This integration is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Humidex Sensor Options",
+        "description": "Modify the entities used for humidex calculation.",
+        "data": {
+          "temperature_entity": "Temperature entity",
+          "humidity_entity": "Humidity entity",
+          "pressure_entity": "Pressure entity (optional)"
+        },
+        "data_description": {
+          "temperature_entity": "Select the entity that provides temperature in °C",
+          "humidity_entity": "Select the entity that provides relative humidity in %",
+          "pressure_entity": "Select the entity that provides atmospheric pressure in hPa for enhanced precision (optional)"
+        }
+      }
+    },
+    "error": {
+      "invalid_entity": "One or more selected entities are invalid or unavailable",
+      "unknown": "Unexpected error"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "humidex": {
+        "state_attributes": {
+          "comfort_description": {
+            "cold": "Cold",
+            "comfortable": "Comfortable", 
+            "slightly_uncomfortable": "Slightly uncomfortable",
+            "very_uncomfortable": "Very uncomfortable",
+            "dangerous": "Dangerous"
+          }
+        }
+      }
+    }
+  }
+}
