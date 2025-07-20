@@ -77,7 +77,7 @@ Once configured, the Humidex sensor will appear in your entities with:
   - `pressure_entity`: Source pressure entity (if configured)
   - `calculation_method`: Method used (standard or enhanced)
   - `comfort_level`: Comfort level (cold, comfortable, slightly_uncomfortable, very_uncomfortable, dangerous)
-  - `comfort_description`: Comfort description in French
+  - `comfort_description`: Comfort description, Localized
 
 ### Lovelace Example
 
@@ -123,8 +123,6 @@ Where:
 ## Support
 
 - 🐛 **Issues**: [GitHub Issues](https://github.com/LightD31/humidex-ha/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/LightD31/humidex-ha/discussions)
-- 📖 **Documentation**: [Wiki](https://github.com/LightD31/humidex-ha/wiki)
 
 ## Contributing
 
